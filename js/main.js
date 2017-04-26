@@ -44,7 +44,6 @@ var mainTranslate = {};
 			console.log(whichselected);
 			var outputText = mainTranslate.translateToHindi(translatePhrase);
 			output.innerHTML = outputText;
-			
 		} else if(whichselected == "russian"){
 			console.log(whichselected);
 			outputText = mainTranslate.translateToRussian(translatePhrase);
@@ -58,23 +57,17 @@ var mainTranslate = {};
 			var outputText = mainTranslate.translateToFrench(translatePhrase);
 			output.innerHTML = outputText;
 		}
-<<<<<<< HEAD
-=======
+
 
 		console.log("outputText", outputText);
 		var textToSpeech = document.getElementById("voice");
 		textToSpeech.addEventListener("click", handleSpeech);
 
 		function handleSpeech(event){
-			responsiveVoice.speak(outputText);	
+			responsiveVoice.speak(outputText);
 		}
-
->>>>>>> e3b2ada1a787105449835ba1fa8fe7d02c364939
 	});
 
-	
-
-	
 
 
 

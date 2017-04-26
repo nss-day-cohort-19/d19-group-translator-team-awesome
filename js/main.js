@@ -13,7 +13,7 @@ var mainTranslate = {};
 	console.log(output);
 
 	//set event listener on button element
-	translate.addEventListener("click", () => {
+	translate.addEventListener("click", function(){
 		//debugger
 		//input text
 		let translatePhrase = document.getElementById("input").value;
@@ -44,6 +44,7 @@ var mainTranslate = {};
 			console.log(whichselected);
 			var outputText = mainTranslate.translateToHindi(translatePhrase);
 			output.innerHTML = outputText;
+			
 		} else if(whichselected == "russian"){
 			console.log(whichselected);
 			outputText = mainTranslate.translateToRussian(translatePhrase);
@@ -58,8 +59,19 @@ var mainTranslate = {};
 			output.innerHTML = outputText;
 		}
 
+		console.log("outputText", outputText);
+		var textToSpeech = document.getElementById("voice");
+		textToSpeech.addEventListener("click", handleSpeech);
+
+		function handleSpeech(event){
+			responsiveVoice.speak(outputText);	
+		}
 
 	});
+
+	
+
+	
 
 
 

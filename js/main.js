@@ -44,7 +44,8 @@ var mainTranslate = {};
 			//mainTranslate.translateToSpanish(translatePhrase);
 		}else if(whichselected == "french"){
 			console.log(whichselected);
-			//mainTranslate.translateToFrench(translatePhrase);
+			var outputText = mainTranslate.translateToFrench(translatePhrase);
+			output.innerHTML = outputText;
 		}
 
 

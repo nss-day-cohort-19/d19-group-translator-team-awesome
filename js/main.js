@@ -50,7 +50,8 @@ var mainTranslate = {};
 			output.innerHTML = outputText;
 		}else if(whichselected == "spanish"){
 			console.log(whichselected);
-			//mainTranslate.translateToSpanish(translatePhrase);
+			var outputText = mainTranslate.translateToSpanish(translatePhrase);
+			output.innerHTML = outputText;
 		}else if(whichselected == "french"){
 			console.log(whichselected);
 			var outputText = mainTranslate.translateToFrench(translatePhrase);

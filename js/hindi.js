@@ -11,22 +11,22 @@ var mainTranslate = (function(hindiTranslate){
 		console.log("myArray",myArray);
 		console.log(lexicon.happy);
 		for(i=0;i<myArray.length;i++){
-			
+
 			for(var j in lexicon){
 				if(myArray[i]===j)
 				{
 					translation += lexicon[j] + " ";
-					console.log(myArray[i]);	
+					console.log(myArray[i]);
 					console.log(lexicon[j]);
 					console.log(j);
 					console.log("translation",translation);
 				}
 			}
 
-			
+
 		}
 		return translation;
-		
+
 	}
 	return hindiTranslate;
 })(mainTranslate);

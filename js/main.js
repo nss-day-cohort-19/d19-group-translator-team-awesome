@@ -10,10 +10,10 @@ var mainTranslate = {};
 
 	//get output text element
 	let output = document.getElementById("output");
-
+	console.log(output);
 
 	//set event listener on button element
-	translate.addEventListener("click", function(){
+	translate.addEventListener("click", () => {
 		//debugger
 		//input text
 		let translatePhrase = document.getElementById("input").value;
@@ -29,7 +29,15 @@ var mainTranslate = {};
 				console.log("whichselected", whichselected);
 				break;
 			}
+
+
 		}
+
+		let clearBtn = document.getElementById("clearBtn");
+		clearBtn.addEventListener("click", () => {
+			document.getElementById("input").value = "";
+			document.getElementById("output").innerHTML = "";
+		});
 
 		//call corresponding language functions
 		if (whichselected == "hindi"){

@@ -65,6 +65,7 @@ var mainTranslate = {};
 
 		function handleSpeech(event){
 			responsiveVoice.speak(outputText);
+			outputText = "";
 		}
 	});
 

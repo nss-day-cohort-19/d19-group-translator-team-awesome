@@ -13,7 +13,7 @@ var mainTranslate = (function(russianTranslate){
 		for(i=0;i<russianArray.length;i++){
 
 			for(var j in russianLexicon){
-				if(russianArray[i]===j)
+				if(russianArray[i].toLowerCase()===j.toLowerCase())
 				{
 					rusTranslation += russianLexicon[j] + " ";
 					console.log(russianArray[i]);

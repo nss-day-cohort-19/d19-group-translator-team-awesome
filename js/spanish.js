@@ -7,7 +7,7 @@ var mainTranslate = (function(spanishTranslate){
 		console.log("Spanish Translation");
 		console.log(event);
 
-		var spanishLexicon = {"happy":"feliz", "mothers":"madre", "day":"dia"};
+		var spanishLexicon = {"happy":"Feliz", "mothers":"Madre", "day":"Dia"};
 		var space = " ";
 
 		var spanishArray = event.split(" ");
@@ -17,7 +17,7 @@ var mainTranslate = (function(spanishTranslate){
 		for(var i = 0; i < spanishArray.length; i++){
 
 			for(var x in spanishLexicon) {
-				if(spanishArray[i] === x) {
+				if(spanishArray[i].toLowerCase() === x.toLowerCase()) {
 					spanTranslation += spanishLexicon[x] + " ";
 					console.log(spanishArray[i]);
 					console.log(spanishLexicon[x]);

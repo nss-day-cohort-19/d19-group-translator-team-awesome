@@ -57,12 +57,7 @@ var mainTranslate = {};
 			var outputText = mainTranslate.translateToFrench(translatePhrase);
 			output.innerHTML = outputText;
 		}
-
-
 	});
-
-
-
 
 
 

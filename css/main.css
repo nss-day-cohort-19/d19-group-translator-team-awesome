@@ -1,0 +1,28 @@
+/*div {
+	border: 1px solid black;
+}*/
+
+/*.justify button {
+	margin: 0 auto;
+}*/
+
+h1 {
+	text-align: center;
+}
+
+.text-center {
+	display: block;
+	margin: 0 auto;
+}
+
+textarea {
+	width: 80%;
+	height: 150px;
+	text-align: center;
+}
+
+.stack button,
+.stack select {
+	display: block;
+	margin: 20px auto;
+}

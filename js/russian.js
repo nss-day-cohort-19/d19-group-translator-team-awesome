@@ -6,7 +6,7 @@ var mainTranslate = (function(russianTranslate){
 		var rusTranslation = "";
 		console.log("within my function");
 		console.log(text);
-		var russianLexicon = {"happy":"schastlivy", "mothers":"materi", "day":"den"};
+		var russianLexicon = {"happy":"Schastlivy", "mothers":"Materi", "day":"Den"};
 		var russianArray = text.split(" ");
 		console.log("russianArray",russianArray);
 		console.log(russianLexicon.happy);

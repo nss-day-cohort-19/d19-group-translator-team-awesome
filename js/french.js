@@ -11,8 +11,8 @@ var mainTranslate = function(frenchTranslate) {
 		console.log(myArray);
 		for(n=0;n<myArray.length; n+=1){
 			for (i in lexicon) {
-				if(myArray[n] == i) {
-					myArray[n] = lexicon[i] + " ";
+				if(myArray[n].toLowerCase() == i.toLowerCase()) {
+					myArray[n].toLowerCase() = lexicon[i].toLowerCase() + " ";
 				}
 			}
 		}

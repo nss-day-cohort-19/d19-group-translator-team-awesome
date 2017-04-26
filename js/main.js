@@ -44,7 +44,6 @@ var mainTranslate = {};
 			console.log(whichselected);
 			var outputText = mainTranslate.translateToHindi(translatePhrase);
 			output.innerHTML = outputText;
-			
 		} else if(whichselected == "russian"){
 			console.log(whichselected);
 			outputText = mainTranslate.translateToRussian(translatePhrase);
@@ -59,21 +58,15 @@ var mainTranslate = {};
 			output.innerHTML = outputText;
 		}
 
+
 		console.log("outputText", outputText);
 		var textToSpeech = document.getElementById("voice");
 		textToSpeech.addEventListener("click", handleSpeech);
 
 		function handleSpeech(event){
-			responsiveVoice.speak(outputText);	
+			responsiveVoice.speak(outputText);
 		}
-
 	});
-
-	
-
-	
-
-
 
 
 

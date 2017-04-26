@@ -13,12 +13,12 @@ var mainTranslate = (function(hindiTranslate){
 		for(i=0;i<myArray.length;i++){
 			
 			for(var j in lexicon){
-				if(myArray[i].toLowerCase()===j.toLowerCase())
+				if(myArray[i]===j)
 				{
 					translation += lexicon[j] + " ";
-					console.log(myArray[i].toLowerCase());	
-					console.log(lexicon[j].toLowerCase());
-					console.log(j.toLowerCase());
+					console.log(myArray[i]);	
+					console.log(lexicon[j]);
+					console.log(j);
 					console.log("translation",translation);
 				}
 			}

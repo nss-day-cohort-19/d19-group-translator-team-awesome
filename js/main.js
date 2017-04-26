@@ -38,7 +38,8 @@ var mainTranslate = {};
 			output.innerHTML = outputText;
 		} else if(whichselected == "russian"){
 			console.log(whichselected);
-			//mainTranslate.translateToRussian(translatePhrase);
+			outputText = mainTranslate.translateToRussian(translatePhrase);
+			output.innerHTML = outputText;
 		}else if(whichselected == "spanish"){
 			console.log(whichselected);
 			//mainTranslate.translateToSpanish(translatePhrase);
@@ -49,7 +50,7 @@ var mainTranslate = {};
 
 
 	});
-		
+
 
 
 
